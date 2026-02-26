@@ -29,4 +29,27 @@ document.getElementById("rsvp-form").addEventListener("submit", e => {
     e.preventDefault();
     alert("Terima kasih atas konfirmasinya 💐");
     e.target.reset();
+
 });
+function sendWhatsApp() {
+    const name = document.getElementById("guest-name").value;
+    const attendance = document.getElementById("attendance").value;
+    const message = document.getElementById("message").value;
+
+    if (!name || !attendance) {
+        alert("Mohon isi nama dan kehadiran 🙏");
+        return;
+    }
+
+    const phoneNumber = "6281234567890"; // GANTI dengan nomor WA tujuan
+    const text =
+`Assalamu’alaikum Wr. Wb.
+Saya *${name}*
+Konfirmasi kehadiran: *${attendance}*
+
+Ucapan:
+${message}`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+}
