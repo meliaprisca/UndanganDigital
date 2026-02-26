@@ -41,7 +41,7 @@ function sendWhatsApp() {
         return;
     }
 
-    const phoneNumber = "6281234567890"; // GANTI dengan nomor WA tujuan
+    const phoneNumber = "6281288271151"; // GANTI dengan nomor WA tujuan
     const text =
 `Assalamu’alaikum Wr. Wb.
 Saya *${name}*
@@ -53,3 +53,4 @@ ${message}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
 }
+
