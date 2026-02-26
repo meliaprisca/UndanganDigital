@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fffafc;
+    color: #444;
+}
+
+.opening {
+    height: 100vh;
+    background: linear-gradient(rgba(255,240,245,0.8), rgba(255,240,245,0.9)),
+                url("https://images.unsplash.com/photo-1526045612212-70caf35c14df");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.opening h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+.opening button {
+    margin-top: 20px;
+    padding: 12px 28px;
+    border: none;
+    background: #d16c8f;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.floral {
+    background: #fff0f6;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+#countdown {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+}
+
+form button {
+    background: #d16c8f;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.thanks {
+    font-style: italic;
+}
