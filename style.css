@@ -83,4 +83,16 @@ form button {
 
 .thanks {
     font-style: italic;
+
+}
+.ayah {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.arti {
+    font-size: 0.95rem;
+    margin-top: 15px;
+    color: #555;
 }
